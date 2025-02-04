@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+        <head>
+    <title> Menu </title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <div id="navbar-placeholder"></div>
+    <h1> Menu </h1>
+  <div>
+    <table style="width:100%">
+      <tr>
+        <td>
+          <button onclick="location.href='appetizers.html'">Appetizers</button>
+        </td>
+        <td>
+          <button onclick="location.href='entree.html'">Entrees</button>
+        </td>
+        <td>
+          <button onclick="location.href='desserts.html'">Desserts</button>
+        </td>
+        <td>
+          <button onclick="location.href='drinks.html'">Drinks</button>
+        </td>
+        <td>
+          <button onclick="location.href='specials.html'">Specials</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('navbar-placeholder').innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
+
