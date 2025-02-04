@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contact Information</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div id="navbar-placeholder"></div>
+  <h1>Contacts</h1>
+    <div class="div1">
+      <img src="contact.gif" alt="Contact GIF" class="contact-image1">
+      <img src="contact1.gif" alt="Contact GIF" class="contact-image2">
+      <img src="contact2.gif" alt="Contact GIF" class="contact-image3">
+    </div>
+<style>
+      .div1 {
+      }
+      .contact-image1,
+      .contact-image2,
+      .contact-image3 {
+        display: inline-block;
+        margin-left: 109px;
+      }
+</style>
+  </body>
+  <script src="script.js"></script>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      });
+  </script>
+</html>
+
