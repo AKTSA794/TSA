@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition Information</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+  <h1>Nutrition Information</h1>
+  <style>
+    .bold-text {
+      font-weight: bold;
+    }
+  </style>
+  <h7 class="bold-text"> "Each meal is crafted with care, featuring nutrient-rich ingredients, authentic flavors, and
+    options for vegan, gluten-free, and other dietary preferences."- Our Curry Leaf Cafe Staff </h7>
+  <h2>Appetizers Information</h2>
+  <ol id="menu-list">
+    <li>
+      <p>Gobi Manchurian:</p>
+<img src="gobi-munchurain.webp" alt="Gobi Manchurian" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('gobi-manchurian')">
+          Show Information</button>
+      </p>
+      <div id="gobi-manchurian" class="nutrition-list">
+        <div>Ingredients: Cauliflower, Cornflour, Ginger, Garlic, Soy Sauce, Spices.</div>
+        <h8>
+          <div> Nutrients: Rich in Vitamin C, Vitamin K, fiber, and antioxidants from fresh cauliflower and bell
+            peppers.
+            Dietary Info: Vegan option available; gluten-free when served with tamari or gluten-free soy sauce.</div>
+        </h8>
+        <ul>
+          <li>Calories: 220 </li>
+          <li>Fat: 13g</li>
+          <li>Protein: 5g</li>
+          <li>Carbs: 25g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Gobi 65:</p>
+      <img src="gobi-65.jpg" alt="Gobi 65" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('gobi-65')">Show Information</button>
+      </p>
+      <div id="gobi-65" class="nutrition-list">
+        <div>Ingredients: Cauliflower, Rice Flour, Ginger, Garlic, Red Chili Powder, Yogurt, Spices.</div>
+        <h8>
+          <div> Nutrients: High in fiber and antioxidants, with a spicy kick from turmeric and chilies.
+            Dietary Info: Vegan; gluten-free option available using rice flour batter.
+        </h8>
+      </div>
+      <ul>
+        <li>Calories: 253 </li>
+        <li>Fat: 16g</li>
+        <li>Protein: 6g</li>
+        <li>Carbs: 27g</li>
+      </ul>
+      </div>
+    </li>
+    <li>
+      <p>Veggie Manchurian:</p>
+      <img src="veggie-munchurain.jpg" alt="Veggie Manchurian" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('veggie-manchurian')">Show Information</button>
+      </p>
+      <div id="veggie-manchurian" class="nutrition-list">
+        <div>Ingredients: Mixed Vegetables, Soy Sauce, Cornflour, Ginger, Garlic, Spices.</div>
+        <h8>
+          <div>
+            Nutrients: Packed with vitamins A and C, fiber, and iron from fresh vegetables.
+            Dietary Info: Vegan; gluten-free available on request.
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 160</li>
+          <li>Fat: 7g</li>
+          <li>Protein: 4g</li>
+          <li>Carbs: 23g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Corn Manchurian:</p>
+      <img src="corn-manchurian.jpg" alt="Corn Manchurian" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('corn-manchurian')">Show Information</button>
+      </p>
+      <div id="corn-manchurian" class="nutrition-list">
+        <div>Ingredients: Sweet Corn, Cornflour, Ginger, Garlic, Soy Sauce, Spices.</div>
+        <h8>
+          <div>
+          Nutrients: Provides Vitamin B, magnesium, and antioxidants from sweet corn.
+            Dietary Info: Vegan; gluten-free when prepared with gluten-free flour.
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 230 </li>
+          <li>Fat: 12g</li>
+          <li>Protein: 4g</li>
+          <li>Carbs: 26g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Pani Puri (6 pieces):</p>
+      <img src="pani-puri.jpg" alt="Pani Puri" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('pani-puri')">Show Information</button>
+      </p>
+      <div id="pani-puri" class="nutrition-list">
+      <div>Ingredients: Semolina, Spices, Tamarind, Chickpeas, Potatoes.</div>
+        <h8>
+          <div>
+            Nutrients: A good source of potassium, Vitamin C, and fiber.
+            Dietary Info: Vegan; gluten-free puris available upon request.
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 170</li>
+          <li>Fat: 7g</li>
+          <li>Protein: 3g</li>
+          <li>Carbs: 23g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Chilli Paneer:</p>
+      <img src="chilli-paneer.jpg" alt="Chilli Paneer" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('chilli-paneer')">Show Information</button>
+      </p>
+      <div id="chilli-paneer" class="nutrition-list">
+        <div>Ingredients: Paneer, Bell Peppers, Soy Sauce, Ginger, Garlic, Spices.</div>
+        <h8>
+          <div>
+            Nutrients: High in protein, calcium, and Vitamin C.
+            Dietary Info: Gluten-free available.
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 320 </li>
+          <li>Fat: 17g</li>
+          <li>Protein: 13g</li>
+          <li>Carbs: 20g</li>
+        </ul>
+      </div>
+      </li>
+    <li>
+      <p>Paneer 65:</p>
+      <img src="paneer-65.jpg" alt="Paneer 65" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('paneer-65')">Show Information
+        </button>
+      </p>
+      <div id="paneer-65" class="nutrition-list">
+        <div>Ingredients: Paneer, Rice Flour, Ginger, Garlic, Red Chili Powder, Spices.</div>
+        <h8>
+          <div>
+            Nutrients: Rich in protein, calcium, and essential minerals.
+            Dietary Info: Gluten-free option available with rice flour.
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 360 </li>
+          <li>Fat: 20g</li>
+          <li>Protein: 13g</li>
+          <li>Carbs: 27g</li>
+        </ul>
+        </div>
+    </li>
+  </ol>
+
+  <h2>Main-Entree Information</h2>
+  <ol id="menu-list">
+    <li>
+      <p>Vegetable Biryani:</p>
+      <img src="veg-biryani.jpg" alt="Vegetable Biryani" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('vegetable-biryani')">Show Information</button>
+      </p>
+      <div id="vegetable-biryani" class="nutrition-list">
+        <div> Ingredients: Basmati rice, mixed vegetables (carrots, beans, peas), yogurt, onions, tomatoes, spices
+          (turmeric, garam masala, cumin, coriander), ghee, ginger, garlic, green chilies, cilantro.</div>
+        <h8>
+          <div>
+            Nutrients: Provides energy, fiber, and an array of vitamins from mixed vegetables.
+            Dietary Info: Vegan; gluten-free.
+          </div>
+        </h8>
+         <ul>
+          <li>Calories: 372 </li>
+          <li>Fat: 11g</li>
+          <li>Protein: 7g</li>
+          <li>Carbs: 65g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Paneer Butter Masala served with Rice:</p>
+      <img src="paneer-with-rice.jpg" alt="Paneer Butter" class="dish-image" style="width: 200px; height: 200px;">
+      <p><button onclick="toggleNutrition('paneer-butter')">Show Information</button>
+      </p>
+      <div id="paneer-butter" class="nutrition-list">
+        <div> Ingredients: Paneer, tomatoes, cream, butter, onions, garlic, ginger, cashews, spices (garam masala,
+          cumin, chili powder), sugar, basmati rice.</div>
+        <h8>
+          <div>
+            Nutrients: High in protein, calcium, Vitamin A, and healthy fats.
+            Dietary Info: Gluten-free.
+            </div>
+        </h8>
+        <ul>
+          <li>Calories: 565 </li>
+          <li>Fat: 28g</li>
+          <li>Protein: 17g</li>
+          <li>Carbs: 55g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Palak Paneer served with Roti (3 pieces):</p>
+      <img src="palak-paneer.jpg" alt="Palak Paneer" class="dish-image" style="width: 230px; height: 180px;">
+      <p><button onclick="toggleNutrition('palak-paneer')">Show Information</button>
+      </p>
+      <div id="palak-paneer" class="nutrition-list">
+        <div> Ingredients: Paneer, spinach, onions, tomatoes, garlic, ginger, green chilies, cream, spices (garam
+          masala, turmeric, cumin), whole wheat flour (for roti), water, ghee.</div>
+        <h8>
+          <div>
+            Nutrients: A powerhouse of iron, calcium, Vitamin K, and protein.
+            Dietary Info: Vegan and gluten-free options available.
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 463 </li>
+          <li>Fat: 17g</li>
+          <li>Protein: 21g</li>
+          <li>Carbs: 56g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Dal Tadka served with Rice:</p>
+      <img src="dal tadka with rice.jpg" alt="Dal Tadka" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('dal-tadka')">Show Information</button>
+      </p>
+      <div id="dal-tadka" class="nutrition-list">
+        <div> Ingredients: Lentils (toor dal, moong dal), ghee, onions, tomatoes, garlic, ginger, green chilies, spices
+          (turmeric, cumin, mustard seeds, asafoetida), cilantro, basmati rice.</div>
+        <h8>
+          <div>
+          Nutrients: High in protein, iron, and dietary fiber.
+            Dietary Info: Vegan; gluten-free
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 443 </li>
+          <li>Fat: 13g</li>
+          <li>Protein: 14g</li>
+          <li>Carbs: 67g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Schezwan Noodles:</p>
+      <img src="schezwan noodles.jpg" alt="Schezwan Noodles" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('schezwan-noodles')">Show Information</button>
+      </p>
+      <div id="schezwan-noodles" class="nutrition-list">
+        <div> Ingredients: Noodles, cabbage, carrots, capsicum, green onions, garlic, ginger, soy sauce, Schezwan sauce,
+          oil, vinegar. </div>
+        <h8>
+          <div>
+            Nutrients: Packed with Vitamin C, B-complex vitamins, and dietary fiber.
+            Dietary Info: Vegan option available; gluten-free upon request.
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 342 </li>
+          <li>Fat: 12g</li>
+          <li>Protein: 7g</li>
+          <li>Carbs: 48g</li>
+        </ul>
+      </div>
+      </div>
+    </li>
+  </ol>
+  <h2>Dessert Information</h2>
+  <ol id="menu-list">
+    <li>
+      <p>Ras Malai:</p>
+      <img src="ras-malai.jpg" alt="Ras Malai" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('ras-malai')">Show Information</button>
+      </p>
+      <div id="ras-malai" class="nutrition-list">
+        <div>Ingredients: Paneer, milk, sugar, saffron, cardamom, pistachios, almonds.</div>
+        <h8>
+          <div>
+            Nutrients: Rich in protein, calcium, and Vitamin B12.
+            Dietary Info: Gluten-free.
+          </div>
+        </h8>
+        <ul>
+          <li>Calories: 263 </li>
+          <li>Fat: 14g</li>
+          <li>Protein: 7g</li>
+          <li>Carbs: 33g</li>
+        </ul>
+      </div>
+      </div>
+    </li>
+    <li>
+      <p>Gulab Jamun:</p>
+      <img src="gulab jamun.jpg" alt="Gulab Jamun" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('gulab-jamun')">Show Information</button>
+      </p>
+      <div id="gulab-jamun" class="nutrition-list">
+        <div>Ingredients: Khoya (reduced milk), all-purpose flour, milk, sugar, cardamom, rose water, ghee (for frying).
+        </div>
+        <h8>
+          <div>
+            Nutrients: Provides calcium, protein, and a quick source of energy.
+            Dietary Info: Gluten-free.
+            </div>
+        </h8>
+        <ul>
+          <li>Calories: 162 </li>
+          <li>Fat: 10g</li>
+          <li>Protein: 3g</li>
+          <li>Carbs: 23g</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p>Bread Halwa:</p>
+      <img src="bread halwa.jpg" alt="Bread Halwa" class="dish-image" style="width: 200px; height: 150px;">
+      <p><button onclick="toggleNutrition('bread-halwa')">Show Information</button>
+      </p>
+      <div id="bread-halwa" class="nutrition-list">
+        <div>Ingredients: Bread, milk, sugar, ghee, cashews, raisins, cardamom.</div>
+        <h8>
+          <div>
+            Nutrients: Contains carbohydrates, calcium, and essential fats.
+            Dietary Info: Gluten-free version available with gluten-free bread.
+            </div>
+        </h8>
+        <ul>
+          <li>Calories: 327 </li>
+          <li>Fat: 17g</li>
+          <li>Protein: 4g</li>
+          <li>Carbs: 44g</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+  <footer>
+    <p>&copy; Curry Leaf Cafe</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      });
+  </script>
+  </body>
+
+</html>
+
