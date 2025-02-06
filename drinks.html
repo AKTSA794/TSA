@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appetizers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+  </div>
+  <h1>Menu</h1>
+  <h2>Appetizers</h2>
+  <div>
+    <table style="width:100%">
+      <tr>
+        <td>
+          <button onclick="location.href='appetizers.html'">Appetizers</button>
+        </td>
+        <td>
+          <button onclick="location.href='entrees.html'">Entrees</button>
+        </td>
+        <td>
+          <button onclick="location.href='desserts.html'">Desserts</button>
+        </td>
+        <td>
+          <button onclick="location.href='drinks.html'">Drinks</button>
+        </td>
+        <td>
+          <button onclick="location.href='specials.html'">Specials</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <ol id="menu-list">
+    <li>
+      <p>Gobi Manchurian:</p>
+      <img src="images/gobi-manchurian.jpg" alt="Gobi Manchurian" class="dish-image">
+      <button onclick="toggleNutrition('gobi-manchurian')">Description</button>
+      <div id="gobi-manchurian" class="description">
+        <p>Classic Indo-Chinese appetizer containing cauliflower florets dipped and fried in a spicy, sweet, and tangy
+          sauce.</p>
+        <p> Ingredients: Fried cauliflower florets, onions, garlic, & Manchurian Sauce.</p>
+      </div>
+    </li>
+    <li>
+      <p>Gobi 65:</p>
+      <img src="images/gobi-65.jpg" alt="Gobi 65" class="dish-image">
+      <button onclick="toggleNutrition('gobi-65')">Description</button>
+      <div id="gobi-65" class="description">
+        <div></div>
+      </div>
+    </li>
+    <li>
+      <p>Veggie Manchurian:</p>
+      <img src="images/veggie-manchurian.jpg" alt="Veggie Manchurian" class="dish-image">
+      <button onclick="toggleNutrition('veggie-manchurian')">Description</button>
+      <div id="veggie-manchurian" class="description">
+        <div></div>
+      </div>
+    </li>
+    <li>
+      <p>Corn Manchurian:</p>
+      <img src="images/corn-manchurian.jpg" alt="Corn Manchurian" class="dish-image">
+      <button onclick="toggleNutrition('corn-manchurian')">Description</button>
+      <div id="corn-manchurian" class="description">
+        <div> </div>
+      </div>
+    </li>
+    <li>
+      <p>Pani Puri (6 pieces):</p>
+      <img src="images/pani-puri.jpg" alt="Pani Puri" class="dish-image">
+      <button onclick="toggleNutrition('pani-puri')">Description</button>
+      <div id="pani-puri" class="description">
+        <div> </div>
+      </div>
+    </li>
+    <li>
+      <p>Chilli Paneer:</p>
+      <img src="images/chilli-paneer.jpg" alt="Chilli Paneer" class="dish-image">
+      <button onclick="toggleNutrition('chilli-paneer')">Description</button>
+      <div id="chilli-paneer" class="description">
+        <div></div>
+      </div>
+    </li>
+    <li>
+      <p>Paneer 65:</p>
+      <img src="images/paneer-65.jpg" alt="Paneer 65" class="dish-image">
+      <button onclick="toggleNutrition('paneer-65')">Description</button>
+      <div id="paneer-65" class="description">
+        <div></div>
+      </div>
+    </li>
+  </ol>
+
+  <footer>
+    <p>&copy; Curry Leaf Cafe</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      });
+  </script>
+</body>
+
+</html>
