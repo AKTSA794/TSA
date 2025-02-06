@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Appetizers</title>
-  <script src="script.js"></script>
+  <title>Entrees</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,8 +12,8 @@
   <div id="navbar-placeholder"></div>
   </div>
   <h1>Menu</h1>
-  <h2>Appetizers</h2>
-          <div>
+  <h2>Entrees</h2>
+  <div>
     <table style="width:100%">
       <tr>
         <td>
@@ -35,94 +34,61 @@
       </tr>
     </table>
   </div>
-  <p>Gobi Manchurian:</p>
-        <img src="gobi-munchurain.webp" alt="Gobi Manchurian" class="dish-image" style="width: 200px; height: 150px;">
-  <p><button onclick="toggleNutrition('gobi-manchurian')">
-      Description</button>
+  <p>Vegetable Biryani:</p>
+  <img src="veg-biryani.jpg" alt="Vegatable Biryani" class="dish-image" style="width: 200px; height: 150px;">
+  <p>
+    <button onclick="toggleNutrition('vegetable-biryani')">
+      Description
+    </button>
   </p>
-  <div id="gobi-manchurian" class="nutrition-list">
+  <div id="vegetable-biryani" class="nutrition-list">
     <p>
-      Indo-Chinese dish made from cauliflower (gobi), which is battered, deep-fried, and then tossed in a savory and spicy Manchurian sauce.
+      Cooked basmati rice with a mix of vegetables (like carrots, peas, potatoes, beans, and cauliflower) along with a
+      variety of spices.
     </p>
   </div>
 
-  <p>Gobi 65:</p>
-  <img src="gobi-65.jpg" alt="Gobi 65" class="dish-image" style="width: 200px; height: 150px;">
-  <p><button onclick="toggleNutrition('gobi-65')">Description</button>
-  </p>
-  <div id="gobi-65" class="nutrition-list">
-    <p>
-      Indian appetizer made with cauliflower, which is marinated in a spiced batter, deep-fried to a crispy texture, and then tossed in a tangy, flavorful sauce.
-    </p>
-  </div>
   <p>
-    Veggie Manchurian:
+    Paneer Butter Masala served with Rice:
   </p>
-  <img src="veggie-munchurain.jpg" alt="Veggie Manchurian" class="dish-image" style="width: 200px; height: 150px;">
+  <img src="paneer-with-rice.jpg" alt="Paneer Butter" class="dish-image" style="width: 200px; height: 150px;">
   <p>
-    <button onclick="toggleNutrition('veggie-manchurian')">
-      Description
-      </button>
-  </p>
-  <div id="veggie-manchurian" class="nutrition-list">
-    <p>
-      Indo-Chinese dish made from finely chopped vegetables like cabbage, carrots, and beans, which are mixed with
-      flour, formed into small balls, and deep-fried to a crispy golden-brown texture.
-    </p>
-  </div>
-  <p>
-    Corn Manchurian:
-  </p>
-  <img src="corn-manchurian.jpg" alt="Corn Manchurian" class="dish-image" style="width: 200px; height: 150px;">
-  <p>
-    <button onclick="toggleNutrition('corn-manchurian')">
+    <button onclick="toggleNutrition('paneer-butter')">
       Description
     </button>
   </p>
-  <div id="corn-manchurian" class="nutrition-list">
+  <div id="paneer-butter" class="nutrition-list">
     <p>
-      Indo-Chinese dish made with sweet corn kernels that are combined with seasonings and shaped into small fritters or
-      balls.
+      The dish features soft cubes of paneer (Indian cottage cheese) cooked in a velvety tomato-based gravy made with
+      butter, cream, and a blend of spices like garam masala, cumin, coriander, and turmeric.
     </p>
   </div>
-  <p>
-    Pani Puri (6 pieces):
-  </p>
-  <img src="pani-puri.jpg" alt="Pani Puri" class="dish-image" style="width: 200px; height: 150px;">
+    <p>Palak Paneer served with Roti (3 pieces):</p>
+    <img src="palak-paneer.jpg" alt="Palak Paneer" class="dish-image" style="width: 230px; height: 180px;">
+    <p><button onclick="toggleNutrition('palak-paneer')">Description</button>
+    </p>
+    <div id="palak-paneer" class="nutrition-list">
     <p>
-    <button onclick="toggleNutrition('pani-puri')">
-      Description
-    </button>
-  </p>
-  <div id="pani-puri" class="nutrition-list">
+
+    </p>
+    </div>
+    <p>Dal Tadka served with Rice:</p>
+    <img src="dal tadka with rice.jpg" alt="Dal Tadka" class="dish-image" style="width: 200px; height: 150px;">
+    <p><button onclick="toggleNutrition('dal-tadka')">Description</button>
+    </p>
+    <div id="dal-tadka" class="nutrition-list">
+    <p>
+      Indian dish where dal (lentils) are cooked with aromatic spices and then tempered (or "tadka") with ghee (clarified butter), mustard seeds, cumin seeds, garlic, ginger, and green chilies.
+    </p>
+  </div>
+    <p>Schezwan Noodles:</p>
+    <img src="schezwan noodles.jpg" alt="Schezwan Noodles" class="dish-image" style="width: 200px; height: 150px;">
+    <p><button onclick="toggleNutrition('schezwan-noodles')">Description</button>
+    </p>
+    <div id="schezwan-noodles" class="nutrition-list">
     <P>
-      Small, round, hollow puris (crispy shells made from semolina or flour), which are filled with a spicy, tangy water
-      known as "pani," along with a mixture of potatoes, chickpeas, or mung beans.
+      Indo-Chinese dish made from stir-fried noodles that are coated in a bold and flavorful Schezwan sauce.
     </P>
-  </div>
-  <p>
-    Chilli Paneer:
-  </p>
-  <img src="chilli-paneer.jpg" alt="Chilli Paneer" class="dish-image" style="width: 200px; height: 150px;">
-  <p><button onclick="toggleNutrition('chilli-paneer')">Description</button>
-  </p>
-  <div id="chilli-paneer" class="nutrition-list">
-    <p>
-      Indo-Chinese dish made with cubes of paneer (Indian cottage cheese) that are stir-fried in a hot and spicy sauce.
-    </p>
-  </div>
-  <p>Paneer 65:</p>
-  <img src="paneer-65.jpg" alt="Paneer 65" class="dish-image" style="width: 200px; height: 150px;">
-  <p>
-    <button onclick="toggleNutrition('paneer-65')">
-      Description
-    </button>
-  </p>
-  <div id="paneer-65" class="nutrition-list">
-    <p>
-      Paneer (Indian cottage cheese) cubes marinated in a mixture of yogurt, ginger- garlic paste, red chili powder,
-      turmeric, and various spices
-    </p>
   </div>
   <footer>
     <p>&copy; Curry Leaf Cafe</p>
