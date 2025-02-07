@@ -19,22 +19,19 @@
   </style>
 </head>
 <body>
-  <div class="background-video2" style="background-image: url('vecteezy_delicious-indian-cuisine-served-on-a-platter_54366338.jpg');"></div>
+  <div class="background-video2" style="background-image: url('/vecteezy_delicious-indian-cuisine-served-on-a-platter_54366338.jpg');"></div>
   <div id="navbar-placeholder"></div>
   <script>
-    fetch('navbar.html')
+    fetch('/navbar.html')
       .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
         return response.text();
       })
       .then(html => {
         document.getElementById('navbar-placeholder').innerHTML = html;
       })
-      .catch(error => {
-        console.error('Error loading navbar:', error);
-      });
+      .catch(error => console.error('Navbar loading error:', error));
   </script>
 </body>
 </html>
+
