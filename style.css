@@ -312,6 +312,15 @@ h7 {
   text-decoration: bold;
 }
 
+h8 {
+  text-align: center;
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #e69d00;
+  text-decoration: bold;
+}
+
 p {
 color: #982f2f;
 padding: 10px 20px;
