@@ -116,13 +116,13 @@ form button:hover {
 }
 
 .navbar-links li {
-  margin: 0 20px; 
+  margin: 0 10px; 
 }
 
 .navbar-links li button {
   background-color: #04AA6D;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   padding: 10px 15px;
   border: none;
   border-radius: 12px;
