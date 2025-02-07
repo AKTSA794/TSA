@@ -26,20 +26,24 @@
       }
 </style>
   <section id="contact">
-    <h2> Any Questions, Reservations, or Inquiries</h2>
+    <h2>Contact Us</h2>
     <form action="thankyou.html" method="GET">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+        <fieldset>
+            <legend>We’d love to hear from you</legend>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
-      <button type="submit">Send</button>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </fieldset>
     </form>
-  </section>
+</section>
   </body>
   <script src="script.js"></script>
   <script>
