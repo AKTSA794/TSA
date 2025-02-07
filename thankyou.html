@@ -1,4 +1,12 @@
 <!DOCTYPE html>
 <html>
 <div class="background-video2" style="background-image: url('vecteezy_delicious-indian-cuisine-served-on-a-platter_54366338.jpg');"></div>
+  <script src="script.js"></script>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      });
+  </script>
 </html>
