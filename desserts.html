@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Appetizers</title>
+  <title>Curries</title>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="navbar-placeholder"></div>
   </div>
-  <h1>Menu</h1>
-  <h2>Deserts</h2>
-  <div>
+  <h1>Curries</h1>
+  <h2>Appetizers</h2>
+          <div>
     <table style="width:100%">
       <tr>
         <td>
@@ -23,7 +24,7 @@
           <button onclick="location.href='entree.html'">Entrees</button>
         </td>
         <td>
-          <button onclick="location.href='deserts.html'">Desserts</button>
+          <button onclick="location.href='desserts.html'">Desserts</button>
         </td>
         <td>
           <button onclick="location.href='drinks.html'">Drinks</button>
@@ -34,35 +35,41 @@
       </tr>
     </table>
   </div>
-  <ol id="menu-list">
-    <li>
-      <p>Ras Malai:</p>
-      <img src="images/gobi-manchurian.jpg" alt="Gobi Manchurian" class="dish-image">
-      <button onclick="toggleNutrition('gobi-manchurian')">Description</button>
-      <div id="gobi-manchurian" class="description">
-        <p>Classic Indo-Chinese appetizer containing cauliflower florets dipped and fried in a spicy, sweet, and tangy
-          sauce.</p>
-        <p> Ingredients: Fried cauliflower florets, onions, garlic, & Manchurian Sauce.</p>
-      </div>
-    </li>
-    <li>
-      <p>Gulab Jamun:</p>
-      <img src="images/gobi-65.jpg" alt="Gobi 65" class="dish-image">
-      <button onclick="toggleNutrition('gobi-65')">Description</button>
-      <div id="gobi-65" class="description">
-        <div></div>
-      </div>
-    </li>
-    <li>
-      <p>Bread Halwa:</p>
-      <img src="images/veggie-manchurian.jpg" alt="Veggie Manchurian" class="dish-image">
-      <button onclick="toggleNutrition('veggie-manchurian')">Description</button>
-      <div id="veggie-manchurian" class="description">
-        <div></div>
-      </div>
-    </li>
-  </ol>
+  <p>Ras Malai:</p>
+        <img src="korma.something" alt="Korma" class="dish-image" style="width: 200px; height: 150px;">
+  <p><button onclick="toggleNutrition('korma')">
+      Description</button>
+  </p>
+  <div id="korma" class="nutrition-list">
+    <p>
+      A delicious and indulgent Indian dessert made from soft, spongy, and creamy white dumplings of chhena (Indian cottage cheese) soaked in a fragrant, rich milk syrup. 
+    </p>
+  </div>
 
+  <p>Gulab Jamun:</p>
+  <img src="gobi-65.jpg" alt="Gobi 65" class="dish-image" style="width: 200px; height: 150px;">
+  <p><button onclick="toggleNutrition('gobi-65')">Description</button>
+  </p>
+  <div id="gobi-65" class="nutrition-list">
+    <p>
+        Iconic Indian dessert that is made from deep-fried dough balls that are soaked in a fragrant sugar syrup
+    </p>
+  </div>
+  <p>
+    Bread Halwa:
+  </p>
+  <img src="veggie-munchurain.jpg" alt="Veggie Manchurian" class="dish-image" style="width: 200px; height: 150px;">
+  <p>
+    <button onclick="toggleNutrition('veggie-manchurian')">
+      Description
+      </button>
+  </p>
+  <div id="veggie-manchurian" class="nutrition-list">
+    <p>
+      Indian dessert made from bread, cooked in ghee (clarified butter), and simmered in a sweet, rich sugar syrup
+    </p>
+  </div>
+  
   <footer>
     <p>&copy; Curry Leaf Cafe</p>
   </footer>
