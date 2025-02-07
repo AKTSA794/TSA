@@ -172,6 +172,7 @@ button:hover {
     height: 50%;
     object-fit: cover;
     z-index: 0;
+    scale: 1/2;
 }
 
 .title-container {
