@@ -1,4 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Curry Leaf</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <header class="title-container">
+    <img src="Curry Leaf.png" alt="Curry Leaf Logo" class="logo">
+    <video autoplay loop muted playsinline class="background-video">
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <p>Authentic South Indian Vegetarian Cuisine</p>
+  </header>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      });
+  </script>
+</body>
+  <footer>
+    <p>
+      &copy; Curry Leaf Cafe
+    </p>
+  </footer>
 </html>
 
