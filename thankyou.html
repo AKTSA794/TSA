@@ -4,15 +4,11 @@
   <div class="background-video2" style="background-image: url('/vecteezy_delicious-indian-cuisine-served-on-a-platter_54366338.jpg');"></div>
   <div id="navbar-placeholder"></div>
   <script>
-    fetch('/navbar.html')
-      .then(response => {
-        if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
-        return response.text();
-      })
+    fetch('navbar.html')
+      .then(response => response.text())
       .then(html => {
         document.getElementById('navbar-placeholder').innerHTML = html;
-      })
-      .catch(error => console.error('Navbar loading error:', error));
+      });
   </script>
 </body>
 </html>
