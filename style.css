@@ -420,7 +420,12 @@ footer {
 }
 
 .about {
-  text-align: center;
+    text-align: center;
+}
+
+.about img {
+    display: block;
+    margin: 0 auto;
 }
   
 
