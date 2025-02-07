@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Appetizers</title>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,14 +14,14 @@
   </div>
   <h1>Menu</h1>
   <h2>Appetizers</h2>
-  <div>
+          <div>
     <table style="width:100%">
       <tr>
         <td>
           <button onclick="location.href='appetizers.html'">Appetizers</button>
         </td>
         <td>
-          <button onclick="location.href='entrees.html'">Entrees</button>
+          <button onclick="location.href='entree.html'">Entrees</button>
         </td>
         <td>
           <button onclick="location.href='desserts.html'">Desserts</button>
@@ -34,67 +35,95 @@
       </tr>
     </table>
   </div>
-  <ol id="menu-list">
-    <li>
-      <p>Gobi Manchurian:</p>
-      <img src="images/gobi-manchurian.jpg" alt="Gobi Manchurian" class="dish-image">
-      <button onclick="toggleNutrition('gobi-manchurian')">Description</button>
-      <div id="gobi-manchurian" class="description">
-        <p>Classic Indo-Chinese appetizer containing cauliflower florets dipped and fried in a spicy, sweet, and tangy
-          sauce.</p>
-        <p> Ingredients: Fried cauliflower florets, onions, garlic, & Manchurian Sauce.</p>
-      </div>
-    </li>
-    <li>
-      <p>Gobi 65:</p>
-      <img src="images/gobi-65.jpg" alt="Gobi 65" class="dish-image">
-      <button onclick="toggleNutrition('gobi-65')">Description</button>
-      <div id="gobi-65" class="description">
-        <div></div>
-      </div>
-    </li>
-    <li>
-      <p>Veggie Manchurian:</p>
-      <img src="images/veggie-manchurian.jpg" alt="Veggie Manchurian" class="dish-image">
-      <button onclick="toggleNutrition('veggie-manchurian')">Description</button>
-      <div id="veggie-manchurian" class="description">
-        <div></div>
-      </div>
-    </li>
-    <li>
-      <p>Corn Manchurian:</p>
-      <img src="images/corn-manchurian.jpg" alt="Corn Manchurian" class="dish-image">
-      <button onclick="toggleNutrition('corn-manchurian')">Description</button>
-      <div id="corn-manchurian" class="description">
-        <div> </div>
-      </div>
-    </li>
-    <li>
-      <p>Pani Puri (6 pieces):</p>
-      <img src="images/pani-puri.jpg" alt="Pani Puri" class="dish-image">
-      <button onclick="toggleNutrition('pani-puri')">Description</button>
-      <div id="pani-puri" class="description">
-        <div> </div>
-      </div>
-    </li>
-    <li>
-      <p>Chilli Paneer:</p>
-      <img src="images/chilli-paneer.jpg" alt="Chilli Paneer" class="dish-image">
-      <button onclick="toggleNutrition('chilli-paneer')">Description</button>
-      <div id="chilli-paneer" class="description">
-        <div></div>
-      </div>
-    </li>
-    <li>
-      <p>Paneer 65:</p>
-      <img src="images/paneer-65.jpg" alt="Paneer 65" class="dish-image">
-      <button onclick="toggleNutrition('paneer-65')">Description</button>
-      <div id="paneer-65" class="description">
-        <div></div>
-      </div>
-    </li>
-  </ol>
+  <p>Gobi Manchurian:</p>
+        <img src="gobi-munchurain.webp" alt="Gobi Manchurian" class="dish-image" style="width: 200px; height: 150px;">
+  <p><button onclick="toggleNutrition('gobi-manchurian')">
+      Description</button>
+  </p>
+  <div id="gobi-manchurian" class="nutrition-list">
+    <p>
+      Indo-Chinese dish made from cauliflower (gobi), which is battered, deep-fried, and then tossed in a savory and spicy Manchurian sauce.
+    </p>
+  </div>
 
+  <p>Gobi 65:</p>
+  <img src="gobi-65.jpg" alt="Gobi 65" class="dish-image" style="width: 200px; height: 150px;">
+  <p><button onclick="toggleNutrition('gobi-65')">Description</button>
+  </p>
+  <div id="gobi-65" class="nutrition-list">
+    <p>
+      Indian appetizer made with cauliflower, which is marinated in a spiced batter, deep-fried to a crispy texture, and then tossed in a tangy, flavorful sauce.
+    </p>
+  </div>
+  <p>
+    Veggie Manchurian:
+  </p>
+  <img src="veggie-munchurain.jpg" alt="Veggie Manchurian" class="dish-image" style="width: 200px; height: 150px;">
+  <p>
+    <button onclick="toggleNutrition('veggie-manchurian')">
+      Description
+      </button>
+  </p>
+  <div id="veggie-manchurian" class="nutrition-list">
+    <p>
+      Indo-Chinese dish made from finely chopped vegetables like cabbage, carrots, and beans, which are mixed with
+      flour, formed into small balls, and deep-fried to a crispy golden-brown texture.
+    </p>
+  </div>
+  <p>
+    Corn Manchurian:
+  </p>
+  <img src="corn-manchurian.jpg" alt="Corn Manchurian" class="dish-image" style="width: 200px; height: 150px;">
+  <p>
+    <button onclick="toggleNutrition('corn-manchurian')">
+      Description
+    </button>
+  </p>
+  <div id="corn-manchurian" class="nutrition-list">
+    <p>
+      Indo-Chinese dish made with sweet corn kernels that are combined with seasonings and shaped into small fritters or
+      balls.
+    </p>
+  </div>
+  <p>
+    Pani Puri (6 pieces):
+  </p>
+  <img src="pani-puri.jpg" alt="Pani Puri" class="dish-image" style="width: 200px; height: 150px;">
+    <p>
+    <button onclick="toggleNutrition('pani-puri')">
+      Description
+    </button>
+  </p>
+  <div id="pani-puri" class="nutrition-list">
+    <P>
+      Small, round, hollow puris (crispy shells made from semolina or flour), which are filled with a spicy, tangy water
+      known as "pani," along with a mixture of potatoes, chickpeas, or mung beans.
+    </P>
+  </div>
+  <p>
+    Chilli Paneer:
+  </p>
+  <img src="chilli-paneer.jpg" alt="Chilli Paneer" class="dish-image" style="width: 200px; height: 150px;">
+  <p><button onclick="toggleNutrition('chilli-paneer')">Description</button>
+  </p>
+  <div id="chilli-paneer" class="nutrition-list">
+    <p>
+      Indo-Chinese dish made with cubes of paneer (Indian cottage cheese) that are stir-fried in a hot and spicy sauce.
+    </p>
+  </div>
+  <p>Paneer 65:</p>
+  <img src="paneer-65.jpg" alt="Paneer 65" class="dish-image" style="width: 200px; height: 150px;">
+  <p>
+    <button onclick="toggleNutrition('paneer-65')">
+      Description
+    </button>
+  </p>
+  <div id="paneer-65" class="nutrition-list">
+    <p>
+      Paneer (Indian cottage cheese) cubes marinated in a mixture of yogurt, ginger- garlic paste, red chili powder,
+      turmeric, and various spices
+    </p>
+  </div>
   <footer>
     <p>&copy; Curry Leaf Cafe</p>
   </footer>
