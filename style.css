@@ -13,7 +13,6 @@ body {
 }
 
 #thankyou-page .content {
-  background-color: transparent; /* Make the background transparent */
   box-shadow: none; /* Remove any box shadow if present */
 }
 
