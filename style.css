@@ -12,6 +12,11 @@ body {
   position: relative;
 }
 
+#thankyou-page .content {
+  background-color: transparent; /* Make the background transparent */
+  box-shadow: none; /* Remove any box shadow if present */
+}
+
 .navbar {
   width: 100%;
   display: flex;
