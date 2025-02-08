@@ -343,6 +343,13 @@ div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body > div:not(#navbar-placeholder):not(.content) {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
 button {
   background-color: #04AA6D;
   color: white;
