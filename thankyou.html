@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thanks for Your Response!</title>
+  <title>Thanks for your Response!</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    /* Global styles */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      font-family: 'Arial', sans-serif;
     }
 
     body {
@@ -20,48 +19,43 @@
       background-position: center;
       background-repeat: no-repeat;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      font-family: Arial, sans-serif;
       color: white;
       text-align: center;
     }
 
-    /* Navbar placeholder */
-    #navbar-placeholder {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 10;
-    }
-
-    /* Content container */
     .content {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      max-width: 600px;
-      margin: auto;
-      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     h1 {
+      margin: 0;
       font-size: 2.5rem;
-      margin-bottom: 20px;
     }
 
     p {
+      margin: 10px 0 0;
       font-size: 1.2rem;
-      line-height: 1.6;
     }
   </style>
 </head>
 <body>
+  <!-- Navbar Placeholder -->
   <div id="navbar-placeholder"></div>
+
+  <!-- Main Content -->
   <div class="content">
-    <h1>Thanks for Your Response!</h1>
+    <h1>Thanks for your Response!</h1>
     <p>We will be sure to "Serve" YOU Soon!</p>
   </div>
+
+  <!-- Fetch Navbar -->
   <script>
     fetch('navbar.html')
       .then(response => response.text())
@@ -71,4 +65,3 @@
   </script>
 </body>
 </html>
-
